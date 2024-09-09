@@ -1,0 +1,3 @@
+sndfile
+torchvision
+pyannote.audio
