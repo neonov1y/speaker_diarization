@@ -24,3 +24,8 @@ sudo docker build --network=host -t diarization .
 ```
 
 # Usage
+
+- json config file usage
+- running
+- log
+- 
