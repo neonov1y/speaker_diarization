@@ -1,5 +1,5 @@
 {
   "path_ffmpeg": "/usr/bin/ffmpeg",
-  "path_yaml": "/home/alex/Storage/Studies/Project/online_env/config_local.yaml",
+  "path_yaml": "config_model.yaml",
   "min_duration": 0.5
 }

@@ -4,10 +4,10 @@ pipeline:
   name: pyannote.audio.pipelines.SpeakerDiarization
   params:
     clustering: AgglomerativeClustering
-    embedding: /home/alex/Storage/Studies/Project/online_env/pytorch_model_emb.bin
+    embedding: pytorch_model_emb.bin
     embedding_batch_size: 32
     embedding_exclude_overlap: true
-    segmentation: /home/alex/Storage/Studies/Project/online_env/pytorch_model.bin
+    segmentation: pytorch_model.bin
     segmentation_batch_size: 32
 
 params:
