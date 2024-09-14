@@ -19,5 +19,8 @@ The ffmpeg tool used for conversion of input (mp4 or wav) file into wav audio fi
 
 I prepared Dockerfile for preparation Docker image with catisfied requirements. In Linux environment next command can be used for creation of the docker image:
 sudo docker build --network=host -t diarization .
+```console
+foo@bar:~$ sudo docker build --network=host -t diarization .
+```
 
 # Usage
