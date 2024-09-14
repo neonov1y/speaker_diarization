@@ -6,8 +6,8 @@ The application oriented for two speakers only but can be generallyzed with some
 
 As the result application creates CSV file with speaker diarization time stamps and creates audio file cuts according to it. The audio cuts splited to 3 categories: first speaker speak, second speaker speak and both speakers speak at the same time. 
 
-[!NOTE]
-Note that to get access to the models description you need to be registred in [huggingface.co](https://huggingface.co) and to accept the conditions.
+> [!NOTE]
+> Note that to get access to the models description you need to be registred in [huggingface.co](https://huggingface.co) and to accept the conditions.
 
 # Requirements
 
