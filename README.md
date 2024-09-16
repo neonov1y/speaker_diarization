@@ -20,12 +20,26 @@ The ffmpeg tool used for conversion of input (mp4 or wav) file into wav audio fi
 I prepared Dockerfile for preparation Docker image with catisfied requirements. In Linux environment next command can be used for creation of the docker image:
 ```console
 cd <application_directory>
-sudo docker build --network=host -t diarization .
+sudo docker build --network=host -t <image_name> .
 ```
 
 # Usage
 
-- json config file usage
-- running
-- log
-- 
+## JSON config
+
+Before running the application required to setup the config_params.json file. In the file you will find 3 parameters to set:
+path_ffmpeg - path to ffmpeg tool
+path_yaml - path to configuration faml file with parameters of the model (recommended to use default if you dont want to change the speaker diarization model)
+min_duration - minimal duration in seconds used for segmentation model to seperate between speaking segments for the same speaker (0.5 default value)
+
+## Running
+
+To run the application in Linux environment use next command:
+```console
+python3 diarization.py -f <input_file>
+```
+Under <input_file> set mp4 or wav file for with you want to perform speaker dizarization.
+
+## Running Log
+
+ After running the application script you will find running log file "running.log" in the directory where you running from the script.
