@@ -13,7 +13,9 @@ As the result application creates CSV file with speaker diarization time stamps 
 
 The application tested in Linux (Ubuntu 24.04 LTS) environment but potentially not restricted to it. It developed and tested with python versions Python-3.10.6 and Python 3.12.3 but generally require Python version greater or equal to 3.10.
 
-The ffmpeg tool used for conversion of input (mp4 or wav) file into wav audio file with mono mode and sampling frequency of 16000Hz. This parameters of auiod file required for pyaanote.audio library. Also, ffmpeg used for criation of final audio cuts.
+Also, required to install python libraries listed in requirement.txt file. 
+
+Required to install the ffmpge tool. The ffmpeg tool used for conversion of input (mp4 or wav) file into wav audio file with mono mode and sampling frequency of 16000Hz. These parameters of audio file required for pyaanote.audio library. Also, ffmpeg used for criation of final audio cuts.
 
 # Docker
 
