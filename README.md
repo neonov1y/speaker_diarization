@@ -27,7 +27,7 @@ sudo docker build --network=host -t <image_name> .
 
 ## Unzip and prepare the model
 
-Unzip the pytorch_model_emb.zip" file the embedding model and locate it in the same direcory with the rest files.
+Unzip the "pytorch_model_emb.zip" file the embedding model and locate it in the same direcory with the rest files.
 
 ## JSON config
 
