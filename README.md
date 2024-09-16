@@ -1,19 +1,25 @@
 # Description
 
-In this repository you will find speaker diarization application implemented using [pyannote.audio](https://huggingface.co/pyannote) library and [ffmpeg](https://ffmpeg.org/) tool. It designed to work in offline mode and use two pretrained models required for speaker diarization. The segmentation model is [pyannote/segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0) and the embedded model is [pyannote/wespeaker-voxceleb-resnet34-LM](https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM).
+In this repository, you will find a speaker diarization application implemented using the [pyannote.audio](https://huggingface.co/pyannote) library and the [ffmpeg](https://ffmpeg.org/) tool. t is designed to work in offline mode and uses two pretrained models required for speaker diarization. The segmentation model is [pyannote/segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0) , and the embedding model is [pyannote/wespeaker-voxceleb-resnet34-LM](https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM).
 
-The application oriented for two speakers only but can be generallyzed with some code modifications. As input it accepts mp4 and wav files.
+The application is oriented toward two speakers only but can be generalized with some code modifications. It accepts mp4 and wav files as input.
 
-As the result application creates CSV file with speaker diarization time stamps and creates audio file cuts according to it. The audio cuts splited to 3 categories: first speaker speak, second speaker speak and both speakers speak at the same time. 
+As a result, the application creates a CSV file with speaker diarization timestamps and generates audio file segments based on them. The audio cuts are split into three categories: the first speaker, the second speaker, and both speakers speak at the same time.
 
 > [!NOTE]
-> Note that to get access to the models description you need to be registred in [huggingface.co](https://huggingface.co) and to accept the conditions for each model.
+> To access the model descriptions, you need to be registered on [huggingface.co](https://huggingface.co) and accept the conditions for each model.
 
 # Requirements
 
-The application tested in Linux (Ubuntu 24.04 LTS) environment but potentially not restricted to it. It developed and tested with python versions Python-3.10.6 and Python 3.12.3 but generally require Python version greater or equal to 3.10.
+## OS
 
-Also, required to install python libraries listed in requirement.txt file. 
+The application was tested in a Linux (Ubuntu 24.04 LTS) environment but is potentially not restricted to Linux OS only. 
+
+## Python version
+
+It was developed and tested with Python versions 3.10.6 and 3.12.3, but generally requires Python version 3.10 or higher. Also, required to install python libraries listed in requirement.txt file. 
+
+## ffmpeg tool
 
 Required to install the ffmpge tool. The ffmpeg tool used for conversion of input (mp4 or wav) file into wav audio file with mono mode and sampling frequency of 16000Hz. These parameters of audio file required for pyaanote.audio library. Also, ffmpeg used for criation of final audio cuts.
 
