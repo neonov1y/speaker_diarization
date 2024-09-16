@@ -25,6 +25,10 @@ sudo docker build --network=host -t <image_name> .
 
 # Usage
 
+## Unzip and prepare the model
+
+Unzip the pytorch_model_emb.zip" file the embedding model and locate it in the same direcory with the rest files.
+
 ## JSON config
 
 Before running the application required to setup the config_params.json file. In the file you will find 3 parameters to set:
