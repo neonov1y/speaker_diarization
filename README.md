@@ -19,7 +19,7 @@ Required to install the ffmpge tool. The ffmpeg tool used for conversion of inpu
 
 # Docker
 
-I prepared Dockerfile for preparation Docker image with catisfied requirements. In Linux environment next command can be used for creation of the docker image:
+I prepared Dockerfile for criation of Docker image with catisfied requirements. In Linux environment next command can be used for creation of the docker image:
 ```console
 cd <application_directory>
 sudo docker build --network=host -t <image_name> .
