@@ -17,15 +17,15 @@ The application was tested in a Linux (Ubuntu 24.04 LTS) environment but is pote
 
 ## Python version
 
-It was developed and tested with Python versions 3.10.6 and 3.12.3, but generally requires Python version 3.10 or higher. Also, required to install python libraries listed in requirement.txt file. 
+It was developed and tested with Python versions 3.10.6 and 3.12.3, but generally requires Python version 3.10 or higher. Additionally, it is necessary to install the Python libraries listed in the requirements.txt file.
 
 ## ffmpeg tool
 
-Required to install the ffmpge tool. The ffmpeg tool used for conversion of input (mp4 or wav) file into wav audio file with mono mode and sampling frequency of 16000Hz. These parameters of audio file required for pyaanote.audio library. Also, ffmpeg used for criation of final audio cuts.
+You are also required to install the ffmpeg tool. The ffmpeg tool is used for converting the input mp4 or wav files into a wav audio file with mono mode and a sampling frequency of 16,000 Hz. These audio file parameters are required by the pyannote.audio library. Furthermore, ffmpeg is used for creating the final audio cuts.
 
 # Docker
 
-I prepared Dockerfile for criation of Docker image with catisfied requirements. In Linux environment next command can be used for creation of the docker image:
+I prepared a Dockerfile for the creation of a Docker image with the required dependencies. In a Linux environment, the following commands can be used to create the Docker image:
 ```console
 cd <application_directory>
 sudo docker build --network=host -t <image_name> .
@@ -35,18 +35,17 @@ sudo docker build --network=host -t <image_name> .
 
 ## Unzip and prepare the model
 
-Unzip the "pytorch_model_emb.zip" file with embedding model and locate it in the same direcory with the rest files.
+Unzip the "pytorch_model_emb.zip" file containing the embedding model and place it in the same directory as the other files.
 
 ## JSON config
 
-Before running the application required to setup the config_params.json file. In the file you will find 3 parameters to set:
-path_ffmpeg - path to ffmpeg tool
-path_yaml - path to configuration faml file with parameters of the model (recommended to use default if you dont want to change the speaker diarization model)
-min_duration - minimal duration in seconds used for segmentation model to seperate between speaking segments for the same speaker (0.5 default value)
-
+Before running the application, you need to set up the config_params.json file. In this file, you will find three parameters to configure:
+- path_ffmpeg: The path to the ffmpeg tool.
+- path_yaml: The path to the configuration yaml file with the model parameters (it is recommended to use the default yalm file if you don't want to change the speaker diarization models).
+- min_duration: The minimum duration (in seconds) used by the segmentation model to separate speaking segments for the same speaker (0.5 is the default value).
 ## Running
 
-To run the application in Linux environment use next command:
+To run the application in a Linux environment, use the following command:
 ```console
 python3 diarization.py -f <input_file>
 ```
@@ -54,4 +53,4 @@ Under <input_file> set inout mp4 or wav file for which you want to perform speak
 
 ## Running Log
 
- After running the application script you will find running log file "running.log" in the directory where you running from the script.
+After running the application script, you will find the log file "running.log" in the directory from which you ran the script.
