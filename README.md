@@ -31,6 +31,13 @@ cd <application_directory>
 sudo docker build --network=host -t <image_name> .
 ```
 
+In a Linux environment, the following commands can be used to run the application from the Docker image:
+```console
+cd <application_directory>
+cp <input_file> <application_directory>
+sudo docker run --rm -v $(pwd):/app <image_name> python3 /app/diarization.py -f /app/<input_file_name>
+```
+
 # Usage
 
 ## Unzip and prepare the model
