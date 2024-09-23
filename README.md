@@ -37,6 +37,9 @@ cd <application_directory>
 cp <input_file> <application_directory>
 sudo docker run --rm -v $(pwd):/app <image_name> python3 /app/diarization.py -f /app/<input_file_name>
 ```
+> [!NOTE]
+> Not that required to copy the input file (wanted mp4/wav file) to the application librari directory. Only this directory going be mounted to the Docker image environment and it allow access to the input file from the image. 
+
 
 # Usage
 
