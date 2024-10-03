@@ -58,7 +58,7 @@ To run the application in a Linux environment, use the following command:
 ```console
 python3 diarization.py -f <input_file>
 ```
-Under <input_file> set inout mp4 or wav file for which you want to perform speaker dizarization.
+Under <input_file> set input mp4 or wav file for which you want to perform speaker dizarization.
 
 ## Running Log
 
