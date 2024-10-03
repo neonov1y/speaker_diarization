@@ -60,6 +60,8 @@ python3 diarization.py -f <input_file>
 ```
 Under <input_file> set input mp4 or wav file for which you want to perform speaker dizarization.
 
+After running the application script, you will find the "result_dir" directory in the directory from which you ran the script. The "result_dir" directory will include the csv report and directories with audio file cuts by speaker.
+
 ## Running Log
 
 After running the application script, you will find the log file "running.log" in the directory from which you ran the script.
